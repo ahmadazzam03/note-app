@@ -1,4 +1,4 @@
-//create type adapter for note models
+//Create type adapter for note models
 
 import 'package:hive/hive.dart';
 part 'note_model.g.dart';

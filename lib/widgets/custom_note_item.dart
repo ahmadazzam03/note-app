@@ -49,7 +49,13 @@ class CustomNoteItem extends StatelessWidget {
                   ),
                 ),
 
-                trailing: Icon(Icons.delete, size: 25, color: Colors.black),
+                //Icon(Icons.delete, size: 25, color: Colors.black),
+                trailing: IconButton(
+                  onPressed: () {
+                    note.delete();
+                  },
+                  icon: Icon(Icons.delete, size: 25, color: Colors.black),
+                ),
               ),
 
               Padding(

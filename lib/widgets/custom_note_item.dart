@@ -8,6 +8,7 @@ class CustomNoteItem extends StatelessWidget {
   const CustomNoteItem({super.key, required this.note});
 
   final NoteModel note;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -18,7 +19,7 @@ class CustomNoteItem extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) {
-                return EditNoteView();
+                return EditNoteView(note: note);
               },
             ),
           );

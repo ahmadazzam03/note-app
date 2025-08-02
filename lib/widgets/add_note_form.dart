@@ -55,7 +55,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                     //  To Formatted the DateTime
                     var currentDate = DateTime.now();
                     var formattedCurrentDate = DateFormat(
-                      'dd-mm-yyyy',
+                      'dd-MM-yyyy',
                     ).format(currentDate);
 
                     //Here used to trigger the AddNoteCubit by use BlocProvider

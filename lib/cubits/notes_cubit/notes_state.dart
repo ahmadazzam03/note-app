@@ -4,4 +4,8 @@ sealed class NotesState {}
 
 class NotesInitial extends NotesState {}
 
-class NoteSuccess extends NotesState {}
+class NoteSuccess extends NotesState {
+  final List<NoteModel> notes;
+
+  NoteSuccess(this.notes);
+}

@@ -9,10 +9,9 @@ class NotesCubit extends Cubit<NotesState> {
   NotesCubit() : super(NotesInitial());
 
   //this cubit is used to display note in listView by fetching this notes
-  List<NoteModel>? notes;
   fetchAllNotes() {
     var noteBox = Hive.box<NoteModel>(kNotesBox);
-    notes = noteBox.values.toList();
-    emit(NoteSuccess());
+    final notes = noteBox.values.toList();
+    emit(NoteSuccess(notes));
   }
 }
